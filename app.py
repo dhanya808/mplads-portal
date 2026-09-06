@@ -80,10 +80,10 @@ if not st.session_state.logged_in:
 # MAIN DASHBOARD (Only visible after login)
 # ---------------------------------------------------------
 else:
-    st.markdown(f"""
+    st.markdown("""
         <style>
-        .stApp {{ background-color: #f8fafc; }}
-        .filter-card {{
+        .stApp { background-color: #f8fafc; }
+        .filter-card {
             background-color: #ffffff;
             border: 1px solid #e2e8f0;
             border-radius: 16px;
@@ -91,7 +91,7 @@ else:
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
             margin-bottom: 24px;
         }
-        .filter-label {{ font-weight: 600; color: #1e293b; font-size: 14px; margin-bottom: 8px; }}
+        .filter-label { font-weight: 600; color: #1e293b; font-size: 14px; margin-bottom: 8px; }
         </style>
     """, unsafe_allow_html=True)
 
